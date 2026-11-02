@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surendranath Reddy | Full Stack & Generative AI Developer</title>
+<meta name="description" content="Full Stack Developer and Generative AI engineer. React, FastAPI, LangGraph, RAG, PostgreSQL.">
+<style>
+:root{
+  --bg:#0b1020; --surface:#131a30; --surface2:#1a2340; --text:#e8ecf7; --muted:#9aa6c7;
+  --accent:#6ea8ff; --accent2:#7ee0c3; --border:#263056;
+}
+@media (prefers-color-scheme: light){
+  :root{--bg:#f6f8fc;--surface:#fff;--surface2:#eef2fb;--text:#14192b;--muted:#566080;--accent:#2f5fe0;--accent2:#0e9f7e;--border:#dde3f2}
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:10}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:58px}
+nav .logo{font-weight:700}
+nav ul{display:flex;gap:20px;list-style:none;font-size:.92rem}
+nav ul a{color:var(--muted)} nav ul a:hover{color:var(--text)}
+@media(max-width:640px){nav ul{display:none}}
+.hero{padding:84px 0 60px}
+.badge{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;color:var(--accent2);border:1px solid var(--border);background:var(--surface);padding:6px 14px;border-radius:99px}
+.badge i{width:8px;height:8px;border-radius:50%;background:var(--accent2)}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.1;margin:20px 0 10px;letter-spacing:-.02em}
+h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-size:1.25rem;color:var(--muted);margin-bottom:16px}
+.lead{max-width:640px;color:var(--muted);margin-bottom:28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{padding:11px 20px;border-radius:10px;font-weight:600;font-size:.95rem;border:1px solid var(--border);background:var(--surface);color:var(--text)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:hover{transform:translateY(-1px)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:44px}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px}
+.stat b{display:block;font-size:1.5rem}
+.stat span{color:var(--muted);font-size:.85rem}
+section{padding:56px 0}
+h2{font-size:1.6rem;margin-bottom:24px;letter-spacing:-.01em}
+h2::after{content:"";display:block;width:44px;height:3px;background:var(--accent);border-radius:2px;margin-top:8px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.skills h3{font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:10px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-size:.84rem;background:var(--surface2);border:1px solid var(--border);padding:4px 11px;border-radius:99px}
+.job{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.job h3{font-size:1.1rem} .job .when{color:var(--muted);font-size:.9rem}
+.card ul{padding-left:20px;color:var(--muted)} .card li{margin:6px 0}
+.proj h3{font-size:1.1rem;margin-bottom:4px}
+.proj .stack{margin:10px 0 14px}
+.proj p.d{color:var(--muted);margin-bottom:12px;font-size:.95rem}
+.proj .links{margin-top:auto;padding-top:14px;font-weight:600;font-size:.92rem}
+.proj{display:flex;flex-direction:column}
+.proj.featured{grid-column:1/-1}
+.edu{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px;padding:10px 0;border-bottom:1px solid var(--border)}
+.edu:last-child{border:0}
+.edu small{color:var(--muted)}
+.contact{text-align:center}
+.contact p{color:var(--muted);margin-bottom:22px}
+.contact .btns{justify-content:center}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:30px 0;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="logo" href="#top">Surendra<span style="color:var(--accent)">.</span></a>
+  <ul>
+    <li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <span class="badge"><i></i> Open to full-time roles</span>
+  <h1>Kamireddy <span>Surendranath Reddy</span></h1>
+  <p class="role">Full Stack Developer &amp; Generative AI Engineer</p>
+  <p class="lead">I build systems that work end to end, from React and FastAPI to LLM-powered agents, with a focus on testing, scalability and production-ready AI.</p>
+  <div class="btns">
+    <a class="btn primary" href="Surendra_Reddy_Resume.pdf" download>Download Resume</a>
+    <a class="btn" href="mailto:surendrareddy49175@gmail.com">Email me</a>
+    <a class="btn" href="https://www.linkedin.com/in/surendranath-reddy-4691b625b" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/Surendra1345" target="_blank" rel="noopener">GitHub</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>4 months</b><span>Full Stack &amp; GenAI at Genworx.ai</span></div>
+    <div class="stat"><b>3 projects</b><span>AI agent, deep learning, marketplace</span></div>
+    <div class="stat"><b>3 domains</b><span>Finance, agriculture, healthcare</span></div>
+    <div class="stat"><b>7.14 CGPA</b><span>B.Tech CSE, GITAM (2026)</span></div>
+  </div>
+</div></header>
+
+<section id="about"><div class="wrap">
+  <h2>About</h2>
+  <div class="card">
+    <p style="color:var(--muted)">I'm a Computer Science undergraduate at GITAM University, Bengaluru, with hands-on experience shipping web applications and AI projects. I enjoy turning business problems into working solutions, from database design and APIs to retrieval-augmented generation and agent workflows. I'm driven by problem-solving and quality-focused testing, and I have a growing interest in system design.</p>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <div class="card"><h3>Languages</h3><div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">TypeScript</span></div></div>
+    <div class="card"><h3>Frontend</h3><div class="tags"><span class="tag">React</span><span class="tag">TanStack Query</span><span class="tag">TanStack Router</span><span class="tag">HTML</span><span class="tag">CSS</span></div></div>
+    <div class="card"><h3>Backend</h3><div class="tags"><span class="tag">FastAPI</span><span class="tag">SQLAlchemy</span><span class="tag">Alembic</span><span class="tag">REST APIs</span></div></div>
+    <div class="card"><h3>Databases</h3><div class="tags"><span class="tag">PostgreSQL</span><span class="tag">MySQL</span></div></div>
+    <div class="card"><h3>Generative AI</h3><div class="tags"><span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">Embeddings</span><span class="tag">Chunking Strategies</span></div></div>
+    <div class="card"><h3>AI &amp; Core CS</h3><div class="tags"><span class="tag">Deep Learning</span><span class="tag">Image Processing</span><span class="tag">Data Structures</span><span class="tag">Operating Systems</span><span class="tag">DBMS</span></div></div>
+    <div class="card"><h3>Tools</h3><div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">IntelliJ IDEA</span><span class="tag">JIRA</span></div></div>
+    <div class="card"><h3>Soft Skills</h3><div class="tags"><span class="tag">Problem Solving</span><span class="tag">Self-learning</span><span class="tag">Teamwork</span><span class="tag">Adaptability</span></div></div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <div class="card">
+    <div class="job"><h3>Full Stack &amp; Generative AI Trainee · Genworx.ai</h3><span class="when">June 2026 – October 2026</span></div>
+    <ul>
+      <li>Built full stack applications with FastAPI, React, TypeScript and PostgreSQL, including database migrations using SQLAlchemy and Alembic.</li>
+      <li>Developed LLM-powered solutions using RAG, embeddings, chunking strategies, LangChain and LangGraph.</li>
+      <li>Delivered real-world use cases across finance, agriculture and healthcare, turning business problems into working solutions.</li>
+      <li>Collaborated with the team using Git and GitHub, following clean coding and testing practices.</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card proj featured">
+      <h3>iClinic – AI Front Desk Assistant</h3>
+      <div class="tags stack"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">LangGraph</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">TypeScript</span></div>
+      <ul style="padding-left:20px;color:var(--muted)">
+        <li>AI front desk assistant that books, reschedules and cancels patient appointments across chat, voice and outbound phone calls.</li>
+        <li>Grounded the agent in each clinic's own data (doctors, branches, visit types, live free slots) and verified patient identity before any action.</li>
+        <li>Implemented slot holding with safe, persistent booking to prevent double-bookings, followed by automatic email confirmation.</li>
+        <li>Shipped a login-protected staff dashboard with full conversation history and human hand-over visibility.</li>
+      </ul>
+      <div class="links"><a href="https://github.com/Surendra1345/iclinic/tree/dev" target="_blank" rel="noopener">View on GitHub →</a></div>
+    </div>
+    <div class="card proj">
+      <h3>Deep Learning Image Watermarking</h3>
+      <div class="tags stack"><span class="tag">Python</span><span class="tag">CNN</span><span class="tag">Deep Learning</span><span class="tag">Image Processing</span></div>
+      <p class="d">Encoder–decoder neural network that embeds and extracts digital watermarks while preserving visual quality and staying robust to compression, resizing and noise. Evaluated with PSNR and SSIM.</p>
+      <div class="links"><a href="https://github.com/Surendra1345/project" target="_blank" rel="noopener">View on GitHub →</a></div>
+    </div>
+    <div class="card proj">
+      <h3>Farma Bridge</h3>
+      <div class="tags stack"><span class="tag">React.js</span><span class="tag">TypeScript</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">Alembic</span></div>
+      <p class="d">Agricultural marketplace connecting farmers, buyers, storage facilities and machinery providers, with a React frontend and FastAPI backend. Planned: AI crop disease detection from images.</p>
+      <div class="links"><a href="https://github.com/Surendra1345/Farma_Bridge/tree/dev" target="_blank" rel="noopener">View on GitHub →</a></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <h2>Education &amp; Certifications</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="edu"><div><b>B.Tech, Computer Science &amp; Engineering</b><br><small>GITAM University, Bengaluru · CGPA 7.14/10</small></div><small>2022–2026</small></div>
+      <div class="edu"><div><b>Intermediate (MPC)</b><br><small>Akanksha Junior College · 83.8%</small></div><small>2020–2022</small></div>
+    </div>
+    <div class="card">
+      <div class="edu"><div><b>Data Analytics</b><br><small>Cisco Networking Academy</small></div><small>2025</small></div>
+      <div class="edu"><div><b>AI-ML Virtual Internship</b><br><small>AWS</small></div><small>2023</small></div>
+      <div class="edu"><div><b>C Programming</b><br><small>Coursera</small></div><small>2022</small></div>
+    </div>
+    <div class="card">
+      <h3 style="margin-bottom:8px">Achievements</h3>
+      <ul>
+        <li>Winner, college cricket tournament, representing the GITAM University team.</li>
+        <li>Participated in multiple campus-level sports competitions.</li>
+        <li>South Zone Handball Tournament, CBSE Clusters (2019–2020).</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+  <h2 style="display:inline-block">Let's work together</h2>
+  <p>I'm looking for Full Stack / Generative AI roles. The fastest way to reach me is email or phone.</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:surendrareddy49175@gmail.com">surendrareddy49175@gmail.com</a>
+    <a class="btn" href="tel:+916303023283">+91 63030 23283</a>
+    <a class="btn" href="Surendra_Reddy_Resume.pdf" download>Resume (PDF)</a>
+  </div>
+</div></section>
+
+<footer>© 2026 Kamireddy Surendranath Reddy · Bengaluru, India</footer>
+</body>
+</html>
