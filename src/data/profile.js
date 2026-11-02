@@ -96,7 +96,7 @@ export const experience = {
 }
 
 export const background = [
-  { label: 'Education', title: 'B.Tech, Computer Science & Engineering', meta: 'GITAM University, Bengaluru · 2022–2026 · CGPA 7.14' },
+  { label: 'Education', title: 'B.Tech, Computer Science & Engineering', meta: 'GITAM University, Bengaluru · 2022–2026 · CGPA 7.2' },
   { label: 'Certification', title: 'Data Analytics', meta: 'Cisco Networking Academy · 2025' },
   { label: 'Certification', title: 'AI-ML Virtual Internship', meta: 'AWS · 2023' },
   { label: 'Beyond code', title: 'Sports', meta: 'College cricket tournament winner · South Zone Handball (CBSE Clusters)' },

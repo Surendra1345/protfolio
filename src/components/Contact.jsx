@@ -15,7 +15,7 @@ export default function Contact() {
           <div className="btn-row center">
             <a className="btn btn-ghost" href={profile.linkedin} target="_blank" rel="noopener noreferrer"><Icon name="linkedin" /> LinkedIn</a>
             <a className="btn btn-ghost" href={profile.github} target="_blank" rel="noopener noreferrer"><Icon name="github" /> GitHub</a>
-            <a className="btn btn-ghost" href={profile.resume} download><Icon name="download" /> Resume</a>
+            <a className="btn btn-ghost" href={profile.resume} download="Surendra_Reddy_Resume.pdf"><Icon name="download" /> Resume</a>
           </div>
         </div>
       </div>

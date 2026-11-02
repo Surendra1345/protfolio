@@ -19,7 +19,7 @@ export default function Hero() {
           </p>
           <div className="btn-row">
             <a className="btn btn-primary" href="#work">View my work <Icon name="arrowDown" /></a>
-            <a className="btn" href={profile.resume} download><Icon name="download" /> Resume</a>
+            <a className="btn" href={profile.resume} download="Surendra_Reddy_Resume.pdf"><Icon name="download" /> Resume</a>
           </div>
           <div className="social">
             <a href={profile.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub"><Icon name="github" size={20} /></a>
