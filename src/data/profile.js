@@ -16,7 +16,7 @@ export const profile = {
 }
 
 export const highlights = [
-  { value: '3', label: 'Projects shipped' },
+  { value: '3', label: 'Projects built' },
   { value: '3', label: 'Industries: finance, agriculture, healthcare' },
   { value: '5 mo', label: 'Industry experience at Genworx.ai' },
 ]
@@ -78,11 +78,11 @@ export const projects = [
 ]
 
 export const skills = [
-  { group: 'Frontend', items: ['React', 'TypeScript', 'TanStack Query', 'TanStack Router', 'HTML', 'CSS'] },
+  { group: 'Frontend', items: ['React', 'TypeScript', 'TanStack Query', 'TanStack Router', 'Tailwind CSS', 'HTML', 'CSS'] },
   { group: 'Backend', items: ['Python', 'FastAPI', 'SQLAlchemy', 'Alembic', 'REST APIs', 'Java'] },
-  { group: 'Generative AI', items: ['LLMs', 'RAG', 'LangChain', 'LangGraph', 'Embeddings', 'Chunking'] },
+  { group: 'Generative AI', items: ['LLMs', 'RAG', 'LangChain', 'LangGraph', 'Embeddings', 'Chunking', 'Groq', 'Gemini', 'Sarvam', 'Twilio'] },
   { group: 'Data', items: ['PostgreSQL', 'MySQL', 'SQL', 'Deep Learning', 'Image Processing'] },
-  { group: 'Workflow', items: ['Git', 'GitHub', 'VS Code', 'IntelliJ IDEA', 'JIRA', 'Testing'] },
+  { group: 'Workflow', items: ['Git', 'GitHub', 'Docker', 'VS Code', 'IntelliJ IDEA', 'JIRA', 'Testing'] },
 ]
 
 export const experience = {
