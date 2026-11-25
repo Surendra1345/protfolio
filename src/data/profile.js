@@ -52,9 +52,10 @@ export const projects = [
     highlights: [
       'React + TypeScript frontend on a FastAPI backend with PostgreSQL.',
       'Schema changes managed with Alembic migrations.',
-      'Planned next: AI crop disease detection from photos.',
+      'Crop Doctor: upload photos of a sick plant and a vision AI explains the likely disease or pest and what to do, in English, Telugu or Hindi.',
+      'Built-in AI assistant chat that explains how to sell, buy and book, and stays strictly on topic.',
     ],
-    stack: ['React.js', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Alembic'],
+    stack: ['React.js', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Alembic', 'Groq'],
     github: 'https://github.com/Surendra1345/Farma_Bridge',
   },
   {
