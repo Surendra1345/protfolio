@@ -35,9 +35,10 @@ export const projects = [
       "Grounded in each clinic's own doctors, branches, visit types and live free slots.",
       'Verifies patient identity before acting, and holds slots so double-bookings cannot happen.',
       'Login-protected staff dashboard with full conversation history and human hand-over.',
+      'Chat, voice (English, Tamil, Telugu) and outbound calls. 206 automated tests pass; no double bookings in testing; replies in 0.5-0.7 s without the model, 2-7 s with it.',
     ],
     stack: ['Python', 'FastAPI', 'LangGraph', 'PostgreSQL', 'React', 'TypeScript'],
-    github: 'https://github.com/Surendra1345/iclinic/tree/dev',
+    github: 'https://github.com/Surendra1345/iclinic',
   },
   {
     id: 'farma',
@@ -54,7 +55,7 @@ export const projects = [
       'Planned next: AI crop disease detection from photos.',
     ],
     stack: ['React.js', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Alembic'],
-    github: 'https://github.com/Surendra1345/Farma_Bridge/tree/dev',
+    github: 'https://github.com/Surendra1345/Farma_Bridge',
   },
   {
     id: 'watermark',
@@ -67,8 +68,8 @@ export const projects = [
       'An encoder–decoder neural network that hides a watermark inside an image and extracts it again, while keeping the image looking untouched.',
     highlights: [
       'CNN encoder embeds the mark; decoder recovers it after distortion.',
-      'Evaluated on visual quality with PSNR and SSIM.',
-      'Robustness tested against compression, resizing and noise.',
+      'Reached PSNR 42.97 dB, SSIM 0.9973 and clean-image NC 0.9836.',
+      'Robustness tested against noise, blur, JPEG, resizing, rotation and cropping: average NC 0.82.',
     ],
     stack: ['Python', 'CNN', 'Deep Learning', 'Image Processing'],
     github: 'https://github.com/Surendra1345/project',
@@ -103,9 +104,9 @@ export const background = [
 ]
 
 export const sections = [
+  { id: 'experience', label: 'Experience' },
   { id: 'work', label: 'Work' },
   { id: 'skills', label: 'Skills' },
-  { id: 'experience', label: 'Experience' },
   { id: 'about', label: 'About' },
   { id: 'contact', label: 'Contact' },
 ]

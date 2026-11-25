@@ -13,9 +13,9 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <Experience />
         <Projects />
         <Skills />
-        <Experience />
         <About />
         <Contact />
       </main>
